@@ -130,4 +130,5 @@ dmypy.json
 
 # Additional files
 .DS_Store
-out/
+wrappedifyOut/
+.cache*
