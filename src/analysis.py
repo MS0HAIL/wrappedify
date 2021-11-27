@@ -97,8 +97,9 @@ class ListeningInformation:
 
 
 class SpotifyAPI:
-    client_id = 'ecc3ee32f1254bd3b0f405cfc120f40f'
-    client_secret = '843c797b4a534deeaa1d6274e6697dca'
+    # Add your own
+    client_id = ''
+    client_secret = ''
     redirect_uri = 'http://localhost:7777/callback'
     scope = 'user-read-recently-played'
 
