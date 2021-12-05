@@ -44,7 +44,7 @@ class StreamingHistory:
             dates[song['endTime'].month][0] += 1
             dates[song['endTime'].month][1] += song['msPlayed']
 
-            return dates
+        return dates
 
     def activity_by_time(self) -> dict:
         times = {hour: 0 for hour in range(24)}
