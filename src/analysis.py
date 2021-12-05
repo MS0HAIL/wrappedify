@@ -15,6 +15,7 @@ class StreamingHistory:
         self.hours_listened = 0
 
         files = {file for file in os.listdir(path) if file[:16] + file[-5:] == 'StreamingHistory.json'}
+        files.sort(key=lambda a: int(a[16:-5]))
 
         if not files:
             raise FileNotFoundError('The directory does not contain listening information')
